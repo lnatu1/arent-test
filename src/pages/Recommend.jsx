@@ -3,7 +3,7 @@ import RecommendCards from '/src/components/RecommendCards'
 import Gallery from '/src/components/Gallery'
 import {BaseWrapper, TextAlign} from '/src/styles/Utils'
 import {useEffect, useState} from "react";
-import Button from "../components/Button.jsx";
+import Button from "/src/components/Button";
 
 export default function Recommend() {
     const [record, setRecord] = useState([])

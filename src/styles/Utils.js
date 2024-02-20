@@ -11,8 +11,12 @@ const BaseWrapper = styled.div`
         padding: 0 25px;
     }
 `
+const Main = styled.main`
+    position: relative;
+`
 
 export {
+    Main,
     BaseWrapper,
     TextAlign
 }

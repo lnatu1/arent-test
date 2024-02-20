@@ -1,8 +1,8 @@
 import {getDiary} from '/src/services/api'
 import {DiaryHeading,DiaryGrid, DiaryWrapper} from '/src/styles/Diary'
 import DiaryItem from '/src/components/DiaryItem'
-import Button from "../components/Button.jsx";
-import {TextAlign} from "../styles/Utils.js";
+import Button from "/src/components/Button.jsx";
+import {TextAlign} from "/src/styles/Utils.js";
 import {useEffect, useState} from "react";
 
 export default function Diary() {
