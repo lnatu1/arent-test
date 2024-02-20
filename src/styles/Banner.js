@@ -3,6 +3,10 @@ import styled from 'styled-components'
 const Container = styled.div`
     display: flex;
     height: 31.6rem;
+    @media only screen and (max-width: 992px) {
+        display: block;
+        height: auto;
+    }
 `
 const FoodWrapper = styled.div`
     flex: 0 0 54rem;
@@ -11,6 +15,12 @@ const FoodWrapper = styled.div`
     & > img {
         height: 100%;
         object-fit: cover;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        flex: 1;
+        display: flex;
+        justify-content: center;
     }
 `
 const FoodGoal = styled.div`

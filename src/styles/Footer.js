@@ -14,6 +14,10 @@ const List = styled.ul`
     display: flex;
     align-items: center;
     gap: 45px;
+    
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 `
 const Link = styled(NavLink)`
 `

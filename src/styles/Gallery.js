@@ -13,15 +13,23 @@ const RecommendGrid = styled(Grid)`
 `
 const GalleryItemWrapper = styled.div`
     flex: 0 0 calc(25% - 6px);
+    @media only screen and (max-width: 1000px) {
+        flex: 0 0 calc(50% - 6px);
+        
+        img {
+            width: 100%;
+        }
+    }
 `
 const GalleryItem = styled.div`
     position: relative;
+    cursor: pointer;
 `
 const GalleryBadge = styled.div`
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: var(--color-warning);
+    background-color: var(--color-primary-300);
     color: var(--color-white);
     padding: 8px;
     font-size: 1.5rem;
@@ -34,7 +42,7 @@ const GalleryDesc = styled.div`
 const GalleryTag = styled.a`
     font-size: 1.2rem;
     display: inline-block;
-    color: var(--color-brand);
+    color: var(--color-primary-400);
     margin-right: 10px;
 `
 

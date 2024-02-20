@@ -9,7 +9,7 @@ export default function MenuNav({visible}) {
     const data = [
         {
             title: '自分の記録',
-            link: '/'
+            link: '/record'
         },
         {
             title: '体重グラフ',

@@ -6,11 +6,14 @@ const StyledNav = styled.nav`
     background-color: var(--color-dark-1);
 `
 const Inner = styled(BaseWrapper)`
-    text-color: #fff;
     height: 64px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    @media only screen and (max-width: 1000px) {
+        padding: 0 25px;
+    }
 `
 const NavListWrapper = styled.div`
     display: flex;
@@ -21,8 +24,26 @@ const NavList = styled.ul`
     display: flex;
     align-items: center;
     gap: 50px;
+    @media only screen and (max-width: 768px) {
+        gap: 20px;
+    }
 `
 const NavItem = styled.li`
+    position: relative;
+`
+const NavNoti = styled.div`
+    position: absolute;
+    top: -5px;
+    left: 15px;
+    color: var(--color-white);
+    background-color: var(--color-primary-500);
+    border-radius: 50%;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
 const NavToggle = styled.div`
     width: 26px;
@@ -33,7 +54,7 @@ const NavToggle = styled.div`
     & > .bar {
         width: 100%;
         height: 3px;
-        background-color: var(--color-brand);
+        background-color: var(--color-primary-400);
         transition: all .3s ease;
     }
 
@@ -62,11 +83,31 @@ const Link = styled(NavLink)`
 
     & > span {
         line-height: 2.3rem;
-        margin-left: .8rem;
+        margin-left: 8px;
     }
     
     &.active > span {
-        color: var(--color-brand);
+        color: var(--color-primary-400);
+    }
+    
+    @media only screen and (max-width: 992px) {
+        & > span {
+            font-size: 1rem;
+        }
+        
+        & > img {
+            width: 20px;
+        }
+    }
+
+    @media only screen and (max-width: 614px) {
+        & > span {
+            font-size: 8px;
+        }
+
+        & > img {
+            width: 15px;
+        }
     }
 `
 const Menu = styled.div`
@@ -101,6 +142,7 @@ const MenuLink = styled(NavLink)`
 export {
     Inner,
     Link,
+    NavNoti,
     NavList,
     NavItem,
     NavToggle,

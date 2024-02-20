@@ -38,6 +38,10 @@ const ExerciseWrapper = styled.div`
     height: 192px;
     overflow-y: scroll;
     padding-right: 24px;
+    
+    @media only screen and (max-width: 768px) {
+        display: block;
+    }
 
     &::-webkit-scrollbar-track {
         border-radius: 10px;
@@ -84,12 +88,12 @@ const ExerciseTitle = styled.div`
     line-height: 2.2rem;
 `
 const ExercisePeriod = styled.div`
-    color: var(--color-warning);
+    color: var(--color-primary-300);
     font-size: 1.8rem;
     line-height: 2.2rem;
 `
 const ExerciseExpect = styled.div`
-    color: var(--color-warning);
+    color: var(--color-primary-300);
     font-size: 1.5rem;
     line-height: 1.8rem;
 `
@@ -97,15 +101,25 @@ const Container = styled.div`
     display: flex;
     gap: 48px;
     margin: 56px 0;
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `
 const RecordItem = styled.div`
     position: relative;
-    border: 20px solid var(--color-warning);
+    border: 20px solid var(--color-primary-300);
     background: black;
     flex: 1;
     img {
         width: 100%;
         mix-blend-mode: luminosity;
+    }
+    @media only screen and (max-width: 768px) {
+        width: 50%;
+    }
+    @media only screen and (max-width: 576px) {
+        width: 75%;
     }
 `
 const RecordContent = styled.div`
@@ -118,14 +132,14 @@ const RecordContent = styled.div`
 `
 const RecordTitle = styled.div`
     text-transform: uppercase;
-    color: var(--color-warning);
+    color: var(--color-primary-300);
     font-size: 2.5rem;
     line-height: 3rem;
     letter-spacing: 0.13px;
 `
 const RecordBadge = styled.div`
     color: var(--color-white);
-    background-color: var(--color-brand);
+    background-color: var(--color-primary-400);
     display: inline-block;
     margin-top: 10px;
     padding: 0 20px;

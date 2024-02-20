@@ -3,6 +3,7 @@ import Logo from '/src/ui/Logo'
 import {
     Inner,
     Link,
+    NavNoti,
     NavList,
     NavItem,
     NavToggle,
@@ -39,6 +40,7 @@ export default function Nav() {
                                 <img src='/icons/notify.svg' alt='notify icon'/>
                                 <span>お知らせ</span>
                             </Link>
+                            <NavNoti>1</NavNoti>
                         </NavItem>
                     </NavList>
                     <NavToggle onClick={() => setMenuVisible(!menuVisible)}>

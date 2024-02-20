@@ -14,6 +14,14 @@ const DiaryItem = styled.div`
     padding: 16px 16px 25px;
     border: 2px solid #707070;
     flex: 0 0 calc(25% - 9px);
+    
+    @media only screen and (max-width: 768px) {
+        flex: 0 0 calc(50% - 9px);
+    }
+
+    @media only screen and (max-width: 576px) {
+        flex: 0 0 100%;
+    }
 `
 const DiaryDateTime = styled.div`
     font-size: 1.8rem;
