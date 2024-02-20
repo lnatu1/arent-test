@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {BaseWrapper} from '/src/styles/Utils'
 
 const StyledNav = styled.nav`
-    background-color: var(--color-dark);
+    background-color: var(--color-dark-1);
 `
 const Inner = styled(BaseWrapper)`
     text-color: #fff;
@@ -62,6 +62,10 @@ const Link = styled(NavLink)`
     & > span {
         line-height: 2.3rem;
         margin-left: .8rem;
+    }
+    
+    &.active > span {
+        color: var(--color-brand);
     }
 `
 

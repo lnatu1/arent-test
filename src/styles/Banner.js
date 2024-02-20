@@ -41,8 +41,17 @@ const GlowCircle = styled.div`
     width: 180px;
     height: 180px;
 `
+const ChartWrapper = styled.div`
+    width: 100%;
+    padding: 16px 53px;
+    background-color: var(--color-dark-1);
+    canvas {
+        width: 100%!important;
+    }
+`
 
 export {
+    ChartWrapper,
     Container,
     FoodWrapper,
     FoodGoal,

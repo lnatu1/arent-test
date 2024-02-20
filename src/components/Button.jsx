@@ -11,8 +11,8 @@ const BrandButton = styled.button`
     display: inline-block;
 `
 
-export default function Button() {
+export default function Button({action}) {
     return (
-        <BrandButton>記録をもっと見る</BrandButton>
+        <BrandButton onClick={action}>記録をもっと見る</BrandButton>
     )
 }

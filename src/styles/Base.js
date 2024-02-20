@@ -5,6 +5,7 @@ const GlobalStyles = createGlobalStyle`
         --color-brand: #FF963C;
         --color-dark: #414141;
         --color-dark-1: #2E2E2E;
+        --color-dark-2: #777;
         --color-warning: #FFCC21;
         --color-white: #FFF;
         --max-width: 960px;
@@ -37,6 +38,8 @@ const GlobalStyles = createGlobalStyle`
 
     button {
         cursor: pointer;
+        border: none;
+        background: none;
     }
 
     *:disabled {

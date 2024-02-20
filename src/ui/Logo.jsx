@@ -1,6 +1,7 @@
+import {NavLink} from 'react-router-dom'
 import styled from 'styled-components'
 
-const StyledLogo = styled.div`
+const StyledLogo = styled(NavLink)`
     padding: 0 16px;
     
     & > img {
@@ -11,7 +12,7 @@ const StyledLogo = styled.div`
 
 export default function Logo() {
     return (
-        <StyledLogo>
+        <StyledLogo to='/'>
             <img src='logo.svg' alt='heathy app logo'/>
         </StyledLogo>
     )

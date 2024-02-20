@@ -18,19 +18,21 @@ export default function Nav() {
                 <NavListWrapper>
                     <NavList>
                         <NavItem>
-                            <Link to='/'>
+                            <Link to='/record' className={({ isActive }) =>
+                                isActive ? "active" : ""
+                            }>
                                 <img src='/icons/edit.svg' alt='edit icon'/>
                                 <span>自分の記録</span>
                             </Link>
                         </NavItem>
                         <NavItem>
-                            <Link to='/'>
+                            <Link to='/reward'>
                                 <img src='/icons/reward.svg' alt='reward icon'/>
                                 <span>チャレンジ</span>
                             </Link>
                         </NavItem>
                         <NavItem>
-                            <Link to='/'>
+                            <Link to='/notify'>
                                 <img src='/icons/notify.svg' alt='notify icon'/>
                                 <span>お知らせ</span>
                             </Link>

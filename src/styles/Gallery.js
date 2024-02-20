@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-    max-width: var(--max-width);
-    width: 100%;
     margin: 24px auto;
 `
 const Grid = styled.div`

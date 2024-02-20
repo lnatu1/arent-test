@@ -1,4 +1,3 @@
-import { gallery } from '/src/data/home-data'
 import {
     Wrapper,
     Grid,
@@ -6,11 +5,11 @@ import {
     GalleryBadge,
 } from '/src/styles/Gallery'
 
-export default function Gallery() {
+export default function Gallery({ record }) {
     return (
         <Wrapper>
             <Grid>
-                { gallery.map(item => (
+                { record.map(item => (
                     <GalleryItem key={item.id}>
                         <img src={item.src} alt='food 1' />
                         <GalleryBadge>{item.label}</GalleryBadge>
