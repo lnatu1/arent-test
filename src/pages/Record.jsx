@@ -1,4 +1,5 @@
 import Chart from '/src/ui/Chart'
+import Diary from '/src/ui/Diary'
 import RecordCategory from '/src/ui/RecordCategory'
 import {BaseWrapper} from '/src/styles/Utils'
 import {
@@ -61,6 +62,8 @@ export default function Record() {
                     </ExerciseList>
                 </ExerciseWrapper>
             </ExerciseOutter>
+
+            <Diary />
         </BaseWrapper>
     )
 }

@@ -8,6 +8,12 @@ const Grid = styled.div`
     flex-wrap: wrap;
     gap: 8px;
 `
+const RecommendGrid = styled(Grid)`
+    gap: 18px 8px;
+`
+const GalleryItemWrapper = styled.div`
+    flex: 0 0 calc(25% - 6px);
+`
 const GalleryItem = styled.div`
     position: relative;
 `
@@ -21,10 +27,24 @@ const GalleryBadge = styled.div`
     font-size: 1.5rem;
     line-height: 1.8rem;
 `
+const GalleryDesc = styled.div`
+    font-size: 1.5rem;
+    color: var(--color-dark-4);
+`
+const GalleryTag = styled.a`
+    font-size: 1.2rem;
+    display: inline-block;
+    color: var(--color-brand);
+    margin-right: 10px;
+`
 
 export {
     Wrapper,
     Grid,
+    GalleryDesc,
+    GalleryTag,
     GalleryItem,
+    GalleryItemWrapper,
     GalleryBadge,
+    RecommendGrid,
 }

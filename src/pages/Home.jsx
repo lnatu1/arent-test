@@ -39,7 +39,7 @@ export default function Home() {
                 </TextAlign>}
                 <Gallery record={isFilterRes() ? filterRes : record}/>
                 <TextAlign align="center">
-                    <Button action={loadMoreRecords}/>
+                    <Button text={'記録をもっと見る'} action={loadMoreRecords}/>
                 </TextAlign>
             </BaseWrapper>
         </>

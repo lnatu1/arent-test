@@ -1,5 +1,5 @@
 import { Icon, HeadIcon, HeadIcons } from '/src/styles/Filters'
-import { icons } from '/src/data/home-data'
+import { icons } from '/src/data/data'
 
 export default function SampleFood({filter}) {
     return (

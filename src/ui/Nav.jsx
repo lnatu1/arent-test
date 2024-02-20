@@ -1,3 +1,4 @@
+import {useState} from "react";
 import Logo from '/src/ui/Logo'
 import {
     Inner,
@@ -6,10 +7,12 @@ import {
     NavItem,
     NavToggle,
     NavListWrapper,
-    StyledNav
+    StyledNav,
 } from '/src/styles/Nav'
+import MenuNav from '/src/components/Menu'
 
 export default function Nav() {
+    const [menuVisible, setMenuVisible] = useState(false)
     return (
         <StyledNav>
             <Inner>
@@ -38,10 +41,11 @@ export default function Nav() {
                             </Link>
                         </NavItem>
                     </NavList>
-                    <NavToggle>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                    <NavToggle onClick={() => setMenuVisible(!menuVisible)}>
+                        <div className='bar'></div>
+                        <div className='bar'></div>
+                        <div className='bar'></div>
+                        <MenuNav visible={menuVisible}/>
                     </NavToggle>
                 </NavListWrapper>
             </Inner>

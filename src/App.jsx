@@ -3,6 +3,7 @@ import GlobalStyles from "/src/styles/Base";
 import Layout from "/src/ui/Layout";
 import Home from "/src/pages/Home";
 import Record from "/src/pages/Record";
+import Recommend from "/src/pages/Recommend";
 import PageNotFound from "/src/pages/PageNotFound";
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
                     </Route>
                     <Route element={<Layout/>}>
                         <Route path='/record' element={<Record/>}></Route>
+                    </Route>
+                    <Route element={<Layout/>}>
+                        <Route path='/recommend' element={<Recommend/>}></Route>
                     </Route>
                     <Route path='*' element={<PageNotFound/>}></Route>
                 </Routes>

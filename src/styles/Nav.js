@@ -28,8 +28,9 @@ const NavToggle = styled.div`
     width: 26px;
     padding: 8px 0;
     cursor: pointer;
+    position: relative;
 
-    & > div {
+    & > .bar {
         width: 100%;
         height: 3px;
         background-color: var(--color-brand);
@@ -68,6 +69,34 @@ const Link = styled(NavLink)`
         color: var(--color-brand);
     }
 `
+const Menu = styled.div`
+    background-color: var(--color-dark-2);
+    position: absolute;
+    top: 49px;
+    right: 0;
+    z-index: 2;
+    min-width: 280px;
+    color: var(--color-white);
+    transition: all .3s ease;
+    &:not(.active) {
+        opacity: 0;
+        visibility: hidden;   
+    }
+`
+const MenuList = styled.ul`
+
+`
+const MenuItem = styled.li`
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    &:not(:first-child) {
+        border-top: 1px solid rgba(255,255,255,.15);
+    }
+`
+const MenuLink = styled(NavLink)`
+    padding: 22px 32px;
+    display: block;
+`
 
 export {
     Inner,
@@ -76,5 +105,9 @@ export {
     NavItem,
     NavToggle,
     NavListWrapper,
-    StyledNav
+    StyledNav,
+    Menu,
+    MenuList,
+    MenuItem,
+    MenuLink
 }
