@@ -63,15 +63,15 @@ const NavToggle = styled.div`
     }
 
     &.active {
-        & > div:first-child {
+        & > .bar:first-child {
             transform: translateY(8px) rotate(45deg);
         }
 
-        & > div:nth-child(2) {
+        & > .bar:nth-child(2) {
             opacity: 0;
         }
 
-        & > div:last-child {
+        & > .bar:nth-child(3){
             transform: translateY(-8px) rotate(-45deg);
         }
     }

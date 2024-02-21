@@ -43,7 +43,7 @@ export default function Nav() {
                             <NavNoti>1</NavNoti>
                         </NavItem>
                     </NavList>
-                    <NavToggle onClick={() => setMenuVisible(!menuVisible)}>
+                    <NavToggle onClick={() => setMenuVisible(!menuVisible)} className={menuVisible ? 'active' : ''}>
                         <div className='bar'></div>
                         <div className='bar'></div>
                         <div className='bar'></div>
